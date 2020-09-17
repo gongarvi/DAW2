@@ -1,0 +1,38 @@
+*{
+    font-family: "Fuente"; 
+}
+body{
+    background-image: url("images/shadowlands-fondo.jpg");
+}
+@font-face{
+    font-family: "Fuente";
+    src:url("fonts/WoW.ttf");
+    
+}
+h1{
+    box-shadow: none;
+    font-size: 8em;
+    text-align: center;
+    margin-top: 24%;
+    
+    color: white;
+    
+    
+}   
+h2{
+    text-align: center;
+    color: gray;
+}
+img{
+    height: 10em;
+}
+div.fotos{
+    display: flex;
+    justify-content: center;
+}
+div.imagen{
+    display: inline-block;
+    text-align: center;
+    margin: 1em;
+}
+
