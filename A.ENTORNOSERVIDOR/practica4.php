@@ -3,20 +3,26 @@
     $max=10;
     $numero=rand($min,$max);
     $array=array();
+    echo "<p> Array:";
+
     if($numero>=1 && $numero<=10){
         for($i=0;$i<$numero;$i++){
             $array[]=rand($min,$max);
+            echo " $array[$i],";
         }
     }
+    echo "</p>";
 
     $size=sizeof($array);
     $total=0;
-    for($i=$size-1;$i>=0;$i--){
-        $total+=$array[$i];
-        
+    for($i=0;$i<$size;$i++){
+        $total+=$array[$size-$i-1];
+        if($i+1==3){
+            break;
+        }
     }
     echo "<p>";
-    echo "$total";
+    echo "Total: $total";
     echo "</p>";
     echo "<p>";
     if($total<=10 && $total>0){
